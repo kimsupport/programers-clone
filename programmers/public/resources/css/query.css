@@ -1,0 +1,252 @@
+@media only screen and (max-width: 1278px) {
+  .nav-container {
+    width: 100%;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .program-explain {
+    width: 90%;
+  }
+  .program-card {
+    width: 45%;
+  }
+  .program-card-detail {
+    width: 100%;
+  }
+  .program-card-head {
+    width: 100%;
+  }
+  .joblist-text {
+    width: 90%;
+  }
+
+  .joblist-lang {
+    width: 90%;
+  }
+
+  .joblist-list {
+    width: 90%;
+  }
+  .three-code {
+    width: 90%;
+  }
+
+  footer > div {
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .head-banner {
+    flex-direction: column;
+    height: auto;
+  }
+  .text-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .section-joblist {
+    justify-content: flex-start;
+    align-items: center;
+    height: 1300px;
+  }
+
+  .joblist-list {
+    justify-content: center;
+  }
+
+  .list-card {
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+  }
+
+  .partner-cover {
+    height: 1000px;
+  }
+
+  .your-partner {
+    height: auto;
+    align-items: center;
+  }
+
+  .partner-logo {
+    width: 40%;
+    height: 693px;
+    overflow: hidden;
+  }
+
+  .partner-images {
+    height: 693px;
+  }
+
+  .three-code {
+    height: auto;
+  }
+  .three-code-body {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  .three-code-body-text {
+    width: 90%;
+  }
+  .semi-image {
+    display: none;
+  }
+
+  .semi-section {
+    height: 120px;
+  }
+
+  .semi-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .semi-text-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -30px;
+  }
+  .semi-text-text h6 {
+    text-align: center;
+  }
+
+  .injae-bar {
+    height: 100px;
+    margin-top: 0px;
+  }
+  .injae-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .injae-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-2-text span {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .program-section {
+    height: 900px;
+    justify-content: flex-start;
+  }
+  .program-explain {
+    width: 90%;
+  }
+  .program-card {
+    width: 90%;
+    flex-direction: column;
+    height: 740px;
+  }
+  .program-card-detail {
+    height: 50%;
+  }
+
+  .slide-section {
+    height: auto;
+  }
+
+  .slide {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .text-banner {
+    width: 545px;
+    height: auto;
+  }
+  .text-banner .banner-1-text {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .text-banner .banner-2-text {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+  .text-banner .banner-3-text {
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+  .image-banner {
+    width: 80%;
+    height: 80%;
+  }
+  .list-image {
+    display: none;
+  }
+  .card-text {
+    margin-left: -100px;
+  }
+
+  .three-code-body-image {
+    width: 98%;
+  }
+
+  .three-code-head {
+    width: 96vw;
+  }
+
+  .three-code {
+    width: 96%;
+  }
+
+  .partner-want-you {
+    width: 96vw;
+  }
+
+  .partner-logo {
+    width: 96vw;
+  }
+  .partner-want-you h2 {
+    font-size: 24px;
+  }
+
+  .three-code-head h2 {
+    font-size: 24px;
+  }
+
+  .three-code-head h4 {
+    font-size: 16px;
+  }
+
+  .your-partner {
+    height: auto;
+    align-items: center;
+  }
+
+  .partner-logo {
+    width: 40%;
+    height: 608px;
+    overflow: hidden;
+  }
+
+  .partner-images {
+    height: auto;
+  }
+
+  .injae-bar {
+    margin-top: -150px;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .partner-cover {
+    height: 2300px;
+  }
+}

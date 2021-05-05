@@ -1,0 +1,916 @@
+/*-------------------------------------*/
+/*                기본 설정              */
+/*-------------------------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-------------------------------------*/
+/*            재활용 할거에오              */
+/*-------------------------------------*/
+
+.section-divider {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  margin-bottom: 55px;
+}
+
+.section-divider .code-1 {
+  width: 10px;
+  background-color: #ff9800;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.section-divider .code-2 {
+  width: 20px;
+  background-color: #4caf50;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.section-divider .code-3 {
+  width: 35px;
+  background-color: #0078ff;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.section-divider .code-4 {
+  width: 20px;
+  background-color: #673ab7;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.section-divider .code-5 {
+  width: 10px;
+  background-color: #ff9800;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.section-divider .code-6 {
+  width: 15px;
+  background-color: #f33446;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.arrow-button {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px #cdd7e0 solid;
+  width: 54px;
+  height: 32px;
+  font-size: 15px;
+  color: #5f7f90;
+}
+
+.arrow-button:hover,
+.arrow-button:active {
+  background-color: rgba(0, 120, 255, 0.05);
+  border: 1px solid #0078ff;
+  color: #0078ff;
+}
+
+.b-btn {
+  background-color: #0078ff;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #0078ff;
+  transition: background-color 0.1s. border 0.5s;
+}
+
+.b-btn:hover,
+.b-btn:active {
+  background-color: #0053f4;
+  border: 1px solid #0053f4;
+}
+.r-btn {
+  background-color: #fff;
+  color: #0053f4;
+  border: 1px solid #0053f4;
+  border-radius: 5px;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.r-btn:hover,
+.r-btn:active {
+  background-color: #0054f4;
+  color: #fff;
+}
+
+.tag {
+  color: #0078ff;
+  background-color: #eeebff;
+  border: 1px solid #eeebff;
+  border-radius: 5px;
+
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.tag:hover,
+.tag:active {
+  background-color: #d8ddff;
+  color: #0053f4;
+}
+
+/*-------------------------------------*/
+/*                메인 메뉴              */
+/*-------------------------------------*/
+
+.nav-container {
+  width: 100vw;
+  padding: 6px 0px;
+  height: 34px;
+  display: flex;
+  background-color: #0c151c;
+}
+
+.nav-log {
+  width: 226px;
+  height: 34px;
+  margin-right: 16px;
+  margin-left: 15px;
+}
+
+.logo-image {
+  width: 181px;
+  height: 34px;
+  flex: 1;
+}
+
+.nav-menu {
+  width: 88vw;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+}
+
+.menu-login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-container ul {
+  display: flex;
+}
+
+.nav-container li {
+  margin-right: 15px;
+  display: flex;
+}
+
+.nav-container a:link,
+.nav-container a:visited {
+  font-size: 16px;
+  color: #b2c0cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-container a:hover,
+.nav-container a:active {
+  color: #fff;
+}
+
+/*-------------------------------------*/
+/*                메인 배너              */
+/*-------------------------------------*/
+
+.head-banner {
+  display: flex;
+  width: 100vw;
+  height: 350px;
+  background-color: #0c151c;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-banner {
+  display: block;
+  width: 576px;
+  height: 100%;
+  padding: 0px 16px;
+}
+
+.text-banner h6 {
+  font-size: 14px;
+  color: #0078ff;
+  margin-bottom: 16px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.text-banner h1 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 50px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.text-banner h4 {
+  font-size: 20px;
+  margin-bottom: 32px;
+  line-height: 30px;
+  margin-top: 40px;
+  color: #e9ecf3;
+  font-weight: 330;
+}
+
+.image-banner {
+  display: flex;
+  width: 576px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+}
+
+.text-banner .b-btn {
+  width: 182px;
+  height: 40px;
+}
+
+.banner-2-text span {
+  display: block;
+}
+
+/*-------------------------------------*/
+/*            프로그램 설명부              */
+/*-------------------------------------*/
+
+.program-section {
+  height: 500px;
+  padding-top: 70px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-explain {
+  width: 1151px;
+  height: 45px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+.program-explain i {
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.program-card {
+  width: 60%;
+  height: 80%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.program-card-detail {
+  width: 576px;
+  height: 95%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b2c0cc;
+  border-radius: 8px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  border-bottom: 1px solid #b2c0cc;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  display: flex;
+  width: 94%;
+  height: 34%;
+  padding: 3%;
+  flex-direction: column;
+}
+
+.card-body h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.card-body p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 5px;
+  color: #5f7f90;
+  font-weight: 400;
+}
+
+.program-explain .r-btn {
+  width: 65px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.card-body .link:hover {
+  color: #0078ff;
+  text-decoration: underline;
+}
+
+/*-------------------------------------*/
+/*                  포지션               */
+/*-------------------------------------*/
+.section-joblist {
+  height: 700px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joblist-text {
+  height: 40px;
+  width: 1152px;
+  color: #263747;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.joblist-text input {
+  margin-left: 20px;
+}
+
+.joblist-lang {
+  display: flex;
+  width: 1152px;
+
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+
+.joblist-lang li {
+  display: flex;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.joblist-list {
+  width: 1152px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-card {
+  width: 47%;
+  height: 20%;
+  padding: 10px;
+  padding: 0.5%;
+  margin-left: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d7e2eb;
+  border-radius: 3px;
+}
+
+.list-card .card-image {
+  width: 80px;
+  height: 80px;
+  display: flex;
+}
+
+.list-card .list-image {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.list-card .card-text {
+  width: 438px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+.list-card .card-text .card-position {
+  height: 35%;
+  color: #263747;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.list-card .card-text .card-company-name {
+  height: 30%;
+  color: #98a8b9;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.list-card .card-text .card-lang {
+  display: flex;
+  text-decoration: none;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 35%;
+}
+
+.list-card .card-text .card-lang li {
+  display: flex;
+  margin-right: 10px;
+  align-self: flex-start;
+  border: solid 1px #e9ecf3;
+  border-radius: 3px;
+  align-content: center;
+  font-size: 12px;
+  padding: 5px;
+  background-color: #e9ecf3;
+  color: #44576c;
+}
+
+.joblist-text .r-btn {
+  width: 105px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.joblist-lang .tag {
+  font-size: 14px;
+  width: auto;
+  height: 30px;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 5px;
+}
+
+.list-card:hover {
+  border: 1px solid #d7e2eb;
+}
+
+.list-card:hover .card-position {
+  text-decoration: underline;
+  color: #0078ff;
+}
+
+/*-------------------------------------*/
+/*               포지션 more!            */
+/*-------------------------------------*/
+.semi-section {
+  background-color: #f4f4f8;
+  margin-top: 80px;
+  padding: 27px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.semi-text {
+  display: flex;
+  height: 70px;
+  width: 1145px;
+  align-self: center;
+}
+
+.semi-image {
+  width: 76px;
+  height: 76px;
+}
+
+.semi-image-image {
+  width: 100%;
+  height: 100%;
+}
+
+.semi-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+semi-text-text {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-left: 15px;
+}
+
+.semi-text-text h6 {
+  margin: 0px;
+  font-size: 14px;
+  justify-self: flex-start;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #0078ff;
+  font-weight: 500;
+}
+
+.semi-text-text p {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.semi-text-button .b-btn {
+  width: 120px;
+  height: 40px;
+}
+
+.semi-text-text p b {
+  box-shadow: inset 0 -0.5rem #ffeb3b;
+  font-weight: 400;
+}
+
+/*-------------------------------------*/
+/*                슬라이드 배너              */
+/*-------------------------------------*/
+.slide-section {
+  height: 242px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  height: 242px;
+  width: 1151px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #172334;
+  border-radius: 15px;
+}
+
+.slide-text {
+  width: 50%;
+  height: 80%;
+  margin-left: 5%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-text h6 {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 350;
+}
+
+.slide-text h4 {
+  line-height: 30px;
+  margin-top: 10px;
+  font-size: 23px;
+  font-weight: 350;
+}
+
+.slide-text h5 {
+  display: flex;
+  margin-top: 30px;
+  justify-self: flex-end;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.slide-image {
+  width: 30%;
+  height: 70%;
+  margin-left: 3%;
+}
+
+.slide-image-image {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------*/
+/*             three-code              */
+/*-------------------------------------*/
+
+.three-code-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-code {
+  display: flex;
+  width: 1151px;
+  height: 800px;
+  margin: 0px 384px;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-code-head {
+  height: 100px;
+  width: 1151px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three-code-head h2 {
+  margin-top: 0px;
+  font-size: 32px;
+}
+
+.three-code-head h4 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4f6b81;
+}
+
+.three-code-body {
+  height: 600px;
+  width: 100%;
+  padding: 0px 16px;
+  display: flex;
+}
+
+.three-code-body-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.three-code-body-text ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  margin-top: -15px;
+}
+
+.three-code-body-text ul li {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  margin-right: 10px;
+  padding-right: 20px;
+  word-break: keep-all;
+}
+
+.three-code-body-text ul li h1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.three-code-body-text ul li p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.three-code-body-image {
+  width: 571px;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.three-code-body-image img {
+  width: 100%;
+  height: 105%;
+}
+
+.three-code-body-text li:hover,
+.three-code-body-text li:active {
+  background-color: #f4f4f8;
+}
+
+.three-code-body-text li:checked {
+  background-color: red;
+}
+
+.three-code-head h2 b {
+  color: #0078ff;
+}
+/*-------------------------------------*/
+/*                친구 많다!             */
+/*-------------------------------------*/
+.partner-cover {
+  display: flex;
+  justify-content: center;
+}
+
+.your-partner {
+  height: 660px;
+  padding: 0px 16px;
+  margin: 0px 83px;
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-want-you {
+  width: 1721px;
+  height: 120px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-want-you h2 {
+  margin-top: 0px;
+  font-size: 32px;
+}
+
+.partner-want-you .start {
+  margin-bottom: 0px;
+}
+
+.partner-want-you .end {
+  margin-top: 0px;
+}
+
+.partner-logo {
+  width: 1721px;
+  height: 434px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.partner-images {
+  width: 935px;
+  height: 434px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner-image {
+  width: 155px;
+  height: 55px;
+  border: 0.0625rem solid #d7e2eb;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-image-down {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient();
+}
+
+.partner-image img {
+  width: 100%;
+  height: 80%;
+}
+
+.start b {
+  color: #0078ff;
+}
+
+/*-------------------------------------*/
+/*                인재 채용              */
+/*-------------------------------------*/
+.injae-bar {
+  height: 54px;
+  padding: 32px;
+  margin-top: 80px;
+  background-color: #263747;
+  display: flex;
+  justify-content: center;
+}
+
+.injae-content {
+  width: 1187px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.injae-text p {
+  color: #0078ff;
+  font-weight: 450;
+  font-size: 18px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.injae-text h5 {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.injae-button .b-btn {
+  width: 90px;
+  height: 40px;
+}
+
+/*-------------------------------------*/
+/*                푸터                  */
+/*-------------------------------------*/
+footer {
+  height: 330px;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+footer > div {
+  width: 1128px;
+}
+
+footer div .title {
+  margin-bottom: 0px;
+}
+
+footer div .title a {
+  margin-bottom: 0px;
+}
+
+footer div .choice a {
+  line-height: 15px;
+}
+
+footer div .alpha {
+  color: #b2c0cc;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+footer div .title a:link,
+footer div .title a:visited,
+footer div .choice a:link,
+footer div .choice a:visited {
+  text-decoration: none;
+}
+
+footer div .title a:link,
+footer div .title a:visited {
+  color: #44576c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+footer div .choice a:link,
+footer div .choice a:visited {
+  color: #8ca5af;
+  font-size: 13px;
+  font-weight: 400;
+}

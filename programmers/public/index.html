@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래머스</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/query.css">
+</head>
+<body>
+    <!-- <form action="/" method="GET" style="display: inline;">
+        <input type="text" id="userid" placeholder="아이디를 입력하세요!" />
+        <input type="password" id="pwd" placeholder="비밀번호를 입력하세요!" />
+        <input type="submit" value="서버에 찍기" />
+    </form> -->
+    <form>
+        <input type="text" name="userid" placeholder="id를 적어주세요!">
+        <input type="password" name="password" placeholder="비밀번호를 적어주세요!">
+    </form>
+    <button class="ajaxsend_1">회원정보 보내기! (ajax)</button>
+    <form>
+        <input type="number" name="search" placeholder="판단용">
+    </form>
+    <button class="ajaxsend_2">콘솔에 찍기! (ajax)</button>
+
+    <div class="nav-container">
+        <div class="nav-log">
+            <img src="resources/image/top-logo.png" class="logo-image">
+        </div>
+        <div class="nav-menu">
+            <div></div>
+            <div class="menu-main">
+                <ul>
+                    <li> <a href="#">탑프로그래머스</a> </li>
+                    <li> <a href="#">실력 체크</a> </li>
+                    <li> <a href="#">개발자 채용</a> </li>
+                    <li> <a href="#">테크 피드</a> </li>
+                    <li style="color: #b2c0cc;">|</li>
+                    <li> <a href="#">코딩테스트 연습</a> </li>
+                    <li> <a href="#">프로그래밍 강의</a> </li>
+                </ul>
+            </div>
+            <div class="menu-login">
+                <ul>
+                    <li> <a href="#">계정 만들기</a> </li>
+                    <li> <a href="#">로그인</a> </li>
+                    <li> <a href="#">기업 회원</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header> <!-- nav -->
+        <div class="head-banner">
+            <div class="text-banner">
+                <h6 class="banner-1-text">기술 중심 개발자 채용 플랫폼</h6>
+                <h1 class="banner-2-text"> <span>개발자 채용의 끝은,</span> <span>결국 코드니까</span></h1>
+                <h4 class="banner-3-text">이력서보다, 당신의 코드가 우선시 되는<br>프로그래머스만의 채용 프로그램을 만나보세요</h4>
+                <input type="button" value="시작하기" class="b-btn">
+            </div>
+            <div class="image-banner">
+                <img src="resources/image/head-lmage.png" class="banner-image">
+            </div>
+        </div>
+    </header>
+
+    <section> <!-- main banner -->
+        <div class="program-section">
+            <div class="program-explain">
+                <div>
+                    채용 프로그램 
+                    <i>?</i>
+                    <input type="button" value="더보기" class="r-btn"> 
+                </div>
+                <div>
+                    <input type="button" value="<" class="arrow-button"> 
+                    <input type="button" value=">" class="arrow-button">
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card-detail">
+                    <div class="card-head">
+                            <img src="resources/image/body-1-img.png" class="head-image">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="link">2021 Dev-Matching: 웹 프론트엔드 개발자(상반기)<h4>
+                        <p>접수 : 21년 02월 15일 11:00 - 03월 05일 17:00<br>
+                        테스트 : 21년 03월 06일 13:00 - 03월 06일 16:00</p>
+                    </div>
+                </div>
+                <div class="program-card-detail">
+                    <div class="card-head">
+                        <img src="resources/image/body-2-img.jpg" class="head-image">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="link">카카오커머스 개발자 영입 - 프론트엔드 개발 챌린지<h4>
+                        <p>접수 : 21년 01월 94일 11:00 - 01월 22일 17:00<br>
+                        테스트 : 21년 01월 23일 14:00 - 01월 30일 17:10</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- 채용중인 포지션 -->
+        <div class="section-joblist">
+            <div class="joblist-text">
+                채용 중인 포지션 <input type="button" value="포지션 더보기" class="r-btn">
+            </div>
+            <ul class="joblist-lang">
+                <li><input type="button" value="JAVA" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Spring" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Node.js" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Django" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="ReactJS" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Vue.js" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="JavaScript" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Python" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Kotlin" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="C++" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="Android" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="iOS" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="서버/백엔드" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="프론트엔드" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="웹 풀스택" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="안드로이드 앱" onclick="location.href ='#'" class="tag"></li>
+                <li><input type="button" value="아이폰 앱" onclick="location.href ='#'" class="tag"></li>
+            </ul>
+            <div class="joblist-list">
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-1.png" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">AI 엔지니어</div>
+                        <div class="card-company-name">디에스랩 글로벌</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-2.png" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">Technical Architect</div>
+                        <div class="card-company-name">Kt NexR</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-3.png" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">백엔드 엔지니어</div>
+                        <div class="card-company-name">앨리스 헬스</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                        <div class="card-image">
+                            <img src="resources/image/session-4.jpg" class="list-image">
+                        </div>
+                    <div class="card-text">
+                        <div class="card-position">Back-end 개발자</div>
+                        <div class="card-company-name">iPortfolio</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-5.png" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">모바일 앱 개발자</div>
+                        <div class="card-company-name">패스트컴퍼스랭귀지</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-6.png" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">iOS Developer</div>
+                        <div class="card-company-name">딜리버리히어로 코리아 (Delivery Hero Korea)</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-7.jpg" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">데이터 분석가</div>
+                        <div class="card-company-name">스포카</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-image">
+                        <img src="resources/image/session-8.jpg" class="list-image">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-position">DBA</div>
+                        <div class="card-company-name">티빙</div>
+                        <ul class="card-lang">
+                            <li>JavaScript</li>
+                            <li>Reactjs</li>
+                            <li>프론트엔드</li>
+                            <li>웹풀스텍</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- 포지션 더보기 -->
+        <div class="semi-section">
+            <div class="semi-text">
+                <div class="semi-image">
+                    <img src="resources/image/seesion-position.png" class="semi-image-image">
+                </div>
+                <div class="semi-content">
+                    <div class="semi-text-text">            
+                        <h6>나에게 꼭 맞는 채용 기회</h6>
+                        <p>개발자를 위한 다양한 필터 옵션으로 <b>나를 위한 포지션</b>을 찾아보세요</p>
+                    </div>
+                    <div class="semi-text-button">
+                        <input type="button" value="포지션 더보기" class="b-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- 슬라이드 배너 -->
+        <div class="slide-section">
+            <div class="slide">
+                <div class="slide-text">
+                    <h6>
+                        채용 중인 기업 & 개발자 매칭 프로젝트
+                    </h6>
+
+                    <h4>
+                        Dev-Matching<br>
+                        프론트엔드 개발자(상반기)
+                    </h4> 
+
+                    <h5>
+                        접수 마감 : 03.05. (금)<br>
+                        과제테스트 : 03.06. (토)
+                    </h5>
+                    
+                </div>
+                <div class="slide-image">
+                    <img src="resources/image/front-challange.png" class="slide-image-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider">   
+        <span class="code-1"></span>
+        <span class="code-2"></span>
+        <span class="code-3"></span>
+        <span class="code-4"></span>
+        <span class="code-5"></span>
+        <span class="code-6"></span>
+    </div>
+    <div class="three-code-cover">
+        <div class="three-code"> <!-- 3자선택락 -->
+            <div class="three-code-head">
+                <h2>
+                    우리의 관심은, 당신의 <b>코드</b> 
+                </h2>
+                <h4>
+                    프로그래머스는 당신이 더 나은 코드를 쓸 수 있도록, 이렇게 도와드립니다.
+                </h4>
+            </div>
+            <div class="three-code-body">
+                <div class="three-code-body-text">
+                    <ul>
+                        <li>
+                            <h1>
+                                <i>1.</i> 코드에 집중하는 채용프로그램
+                            </h1>
+                            <p>
+                                오직 프로그래머스에서만 운영하는 데브매칭, 챌린지를 통해 각종 기업의
+                                채용문을 두드려볼 수 있습니다. 이력서가 부실해도, 코딩테스트에 취약해도,
+                                쌓아온 역량을 마음껏 발휘해 원하는 기업의 문을 두드릴 수 있는 기회를 
+                                제공합니다
+                            </p>
+                        </li>
+                        <li>
+                            <h1>
+                                <i>2.</i> 실전을 위한 트레이닝 시스템
+                            </h1>
+                            <p>
+                                수많은 기업과의 코딩테스트 운영 경험이 그대로 녹아있는 '코딩테스트 연습'
+                                기능, 챌린지나 데브매칭에 실제로 출제되었던 직무별 과제를 풀어보는 '과제관'
+                                (출시예정)을 통해 실전 감각을 익히도록 도와드립니다. 
+                            </p>
+                        </li>
+                        <li>
+                            <h1>
+                                <i>3.</i> 코드리뷰 중심의 교육과정 
+                            </h1>
+                            <p>
+                                각종 실무 주제를 토대로 운영되는 프로그래머스의 온라인 스터디는 읿반 강의
+                                포맷을 벗어나, 코드리뷰에 중심을 두고 있습니다. 상호 피드백을 통한 코드의 
+                                개선에 집중하는 이 과정은 당신이 결과적으로 더 나은 코드를 작성하도록
+                                이끕니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="three-code-body-image">
+                    <img src="resources/image/code-traing-1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-divider">
+        <span class="code-1"></span>
+        <span class="code-2"></span>
+        <span class="code-3"></span>
+        <span class="code-4"></span>
+        <span class="code-5"></span>
+        <span class="code-6"></span>
+    </div>
+
+    <section> <!-- 친구자랑 -->
+        <div class="partner-cover">
+            <div class="your-partner">
+                <div class="partner-want-you">
+                    <h2 class="start">
+                        국내 <b>700개</b> 이상의 기업이
+                    </h2>
+                    <br>
+                    <h2 class="end">
+                        프로그래머스를 통해 당신을 기다립니다.
+                    </h2>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-images">
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-1.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-2.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-3.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-4.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-5.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-6.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-7.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-8.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-9.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-10.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-11.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-12.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-13.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-14.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-15.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-16.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-17.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-18.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-19.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="resources/image/enterprice-20.png">
+                        </div>
+                        <div class="partner-image partner-image-down">
+                            <img src="https://programmers.co.kr/packs/img-logo-dailyhotel-51cc330ec6406f7e3cc188c0861e4447.png">
+                        </div>
+                        <div class="partner-image partner-image-down">
+                            <img src="https://programmers.co.kr/packs/img-logo-ea-676b21287dcf7457810fe0c6279e016c.png">
+                        </div>
+                        <div class="partner-image partner-image-down">
+                            <img src="https://programmers.co.kr/packs/img-logo-platfarm-5d6c435d6a63bb3968e24b421801fd61.png">
+                        </div>
+                        <div class="partner-image partner-image-down">
+                            <img src="https://programmers.co.kr/packs/img-logo-qara-55c57a869fc419026f901e46f362de88.png">
+                        </div>
+                        <div class="partner-image partner-image-down">
+                            <img src="https://programmers.co.kr/packs/img-logo-smartstudy-6bb5ae9f6300bbde1f18c4c1bb0bb68a.png"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="injae-bar">
+        <div class="injae-content">
+            <div class="injae-text">
+                <p>JOIN OUR TEAM</p>   
+                <h5>프로그래머스에 합류해 개발자 채용 문화의 혁신을 이끌어나가는 에너지의 주체가 되어보세요!</h5>
+            </div>
+            <div class="injae-button">
+                <input type="button" value="인재 채용" class="b-btn">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+            <div>
+            <p class="title">
+                <a href="#">2021 프로그래머스</a> 
+            </p>
+            <p class="choice">
+                <a href="#">개발자용 프로그래머스</a>
+                <br><a href="#">기업용 프로그래머스</a>
+                <br><a href="#">프로그래머스 스쿨</a>
+                <br><a href="#">개인정보 처리방침</a>
+                <br><a href="#">이용약관</a>
+                <br><a href="#">FAQ/문의</a>
+            </p> 
+            <p class="alpha">
+                (주)그렙 / 공동대표 이확영, 임성수 / 서울특별시 강남구 테헤란로 151, 510호, 526호(역삼동, 역삼하이츠빌딩) / 사업자등록번호 220-88-75699 / 통신판매업신고 제 2014-서울강남-03241호 / 직업정보제공사업 신고번호 J1200020180027 / 유료직업소개사업 등록번호 (국내)제2019-3220237-14-5-00020호
+                <br>
+                <br>
+                ☎ 기업 서비스 ─ 02.539.1886
+                <br>
+                ☎ 교육 내용 관련 문의 ─ 02.539.1885
+                <br>
+                ☎ 교육 결제, 환불 관련 문의 - 문의하기
+                <br>
+                ☎ 제휴 및 서비스 운영, 기타 문의 ─ 02.539.1882
+                <br>
+                ☎ 코딩 테스트(응시자) 문의 - 문의하기
+                <br>
+                <br>
+                문의하기 운영시간: 오전 9시 ~ 오후 6시 (주말 및 공휴일 휴무)
+                <br>
+                점심시간: 오후 12시 ~ 오후 1시
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    document.querySelector('.ajaxsend_1').addEventListener('click', function(){
+    // 입력값 위치를 찾아 변수에 담고
+    var inputdata = [];
+    inputdata.push(document.forms[0].elements[0].value);
+    inputdata.push(document.forms[0].elements[1].value);
+    // sendAjax 함수를 만들고 URL과 data를 전달
+    sendAjax('http://192.168.1.30:50500/user_post', inputdata)
+    })
+    
+    document.querySelector('.ajaxsend_2').addEventListener('click', function(){
+    // 입력값 위치를 찾아 변수에 담고
+    var inputdata = document.forms[1].elements[0].value;
+    // sendAjax 함수를 만들고 URL과 data를 전달
+    sendAjax_judge('http://192.168.1.30:50500/judgement', inputdata);
+    });
+
+    function sendAjax(url, data){
+        
+        // 입력값을 변수에 담고 문자열 형태로 변환
+        var data = {'firstArgs' : data[0], 'secondArgs' : data[1]};
+        data = JSON.stringify(data);
+        
+        var xhr = new XMLHttpRequest();
+        // content-type을 설정하고 데이터 송신
+        xhr.open('POST', url);
+        xhr.setRequestHeader('Content-type', "application/json");
+        xhr.send(data);
+    }
+
+    function sendAjax_judge(url, data){
+        
+        // 입력값을 변수에 담고 문자열 형태로 변환
+        var data = {'firstArgs' : data};
+        data = JSON.stringify(data);
+        
+        var xhr = new XMLHttpRequest();
+        // content-type을 설정하고 데이터 송신
+        xhr.open('POST', url);
+        xhr.setRequestHeader('Content-type', "application/json");
+        xhr.send(data);
+        
+        // 데이터 수신이 완료되면 표시
+        xhr.addEventListener('load', function(){
+            var answer = JSON.parse(xhr.responseText);
+            console.log(answer.answer);
+
+        });
+    }
+
+    </script>
+</body>
+</html>
